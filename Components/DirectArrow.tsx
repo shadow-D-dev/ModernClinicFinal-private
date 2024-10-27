@@ -3,13 +3,24 @@ interface DirectArrowProp {
   text: string;
   alt: string;
   arrow: StaticImageData | string;
+  height: number;
+  width: number;
 }
-export default function DirectArrow({ text, alt, arrow }: DirectArrowProp) {
+export default function DirectArrow({
+  text,
+  alt,
+  arrow,
+  height,
+  width,
+}: DirectArrowProp) {
   return (
-    <div className="bg-violet-900 text-white p-4 flex gap-8 rounded-3xl w-[300px]">
-      <p className="text-2xl">{text}</p>
-      <div className="rounded-full bg-white">
-        <Image src={arrow} alt={alt} />
+    <div
+      className="bg-[#5e5eee] text-white p-3 pl-6 flex  rounded-[30px] justify-evenly gap-4
+      items-center hover:bg-violet-950"
+    >
+      <p className="text-xl font-bold">{text}</p>
+      <div className="rounded-full bg-white p-1 hover:rotate-45">
+        <Image src={arrow} alt={alt} width={width} height={height} />
       </div>
     </div>
   );
