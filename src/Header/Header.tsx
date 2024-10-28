@@ -1,9 +1,9 @@
 import Image from "next/image";
-import DirectArrow from "@/Components/DirectArrow";
 import arrow from "@/../public/Violte-Arrow.svg";
 import logo from "@/../public/ShreeBalajiLogo.png";
 import test from "@/../public/Testing.svg";
 import HamburgerMenu from "./HamburgerMenu";
+import HoverEffect from "@/animation/animatedArrow";
 
 export default function Header() {
   const pages: string[] = [
@@ -28,9 +28,9 @@ export default function Header() {
         <div className="flex-2 lg:text-2xl md:text-xl  hidden lg:flex md:flex sm:hidden  items-center gap-14">
           {displayPages()}
         </div>
-        <div className=" flex-1 lg:flex justify-end items-center ">
+        <div className=" flex-1 lg:flex justify-end items-center pr-8">
           <div className="hidden md:flex lg:flex">
-            <DirectArrow
+            <HoverEffect
               text={"Book Appointment"}
               alt={"arrowComp"}
               arrow={arrow}
@@ -38,7 +38,7 @@ export default function Header() {
               width={25}
             />
           </div>
-          <div className="flex sm:flex md:hidden lg:hidden  justify-end mt-2">
+          <div className="flex  md:hidden  mt-2 justify-end ">
             <HamburgerMenu />
           </div>
         </div>

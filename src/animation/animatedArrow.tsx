@@ -1,25 +1,40 @@
-// components/HoverEffect.tsx
+"use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import Image, { StaticImageData } from "next/image"; // Import Next.js Image component
 
-const HoverEffect: React.FC<{
+interface HoverEffectProps {
   text: string;
-  arrowSrc: string;
   alt: string;
-}> = ({ text, arrowSrc, alt }) => {
+  width: number;
+  height: number;
+  arrow: StaticImageData;
+}
+
+const HoverEffect: React.FC<HoverEffectProps> = ({
+  text,
+  alt,
+  width,
+  height,
+  arrow,
+}) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <motion.div
-      className="bg-[#5e5eee] text-white p-3 pl-6 flex rounded-[30px] justify-evenly gap-4 items-center hover:bg-[#6210CE] transition-all duration-300"
-      whileHover={{ scale: 1.05 }} // Slight scaling effect on hover
+      className="bg-[#5e5eee] text-white p-3 pl-6 flex rounded-[30px] justify-evenly gap-4 items-center"
+      onHoverStart={() => setIsHovered(true)} // Start hover state
+      onHoverEnd={() => setIsHovered(false)} // End hover state
+      animate={{ backgroundColor: isHovered ? "#1A1A73" : "#5e5eee" }}
+      transition={{ duration: 0.3 }}
     >
       <p className="text-xl font-bold">{text}</p>
       <motion.div
         className="rounded-full bg-white p-1"
-        whileHover={{ rotate: 45 }} // Rotate inner div when hovering
-        transition={{ duration: 0.3 }} // Transition duration for rotation
+        animate={{ rotate: isHovered ? 45 : 0 }} // Rotate only when parent is hovered
+        transition={{ duration: 0.3 }}
       >
-        <Image src={arrowSrc} alt={alt} width={24} height={24} />
+        <Image src={arrow} alt={alt} width={width} height={height} />
       </motion.div>
     </motion.div>
   );

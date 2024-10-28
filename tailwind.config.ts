@@ -6,12 +6,17 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Header/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/HomePage//**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/animation//**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        plusJakarta: "var(--font-plus-jakarta)",
       },
     },
   },

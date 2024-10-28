@@ -1,22 +1,29 @@
-/* styles.css */
-@keyframes wave {
-  0% {
-    background-position: 0% 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
+/* styles/HoverEffect.module.css */
+.container {
+  background-color: #5e5eee;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: space-evenly;
+  gap: 1rem;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
-.wave {
-  background: linear-gradient(
-    90deg,
-    #1a1a73,
-    #5e5eee
-  ); /* Background for normal state */
-  background-size: 200% 100%; /* For the flowing effect */
+.container:hover {
+  background-color: #6210ce;
 }
 
-.wave:hover {
-  animation: wave 2s infinite linear; /* Activate animation on hover */
+.inner {
+  background-color: white;
+  padding: 0.25rem;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.container:hover .inner {
+  transform: rotate(45deg);
 }
