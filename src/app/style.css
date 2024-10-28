@@ -1,0 +1,22 @@
+/* styles.css */
+@keyframes wave {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.wave {
+  background: linear-gradient(
+    90deg,
+    #1a1a73,
+    #5e5eee
+  ); /* Background for normal state */
+  background-size: 200% 100%; /* For the flowing effect */
+}
+
+.wave:hover {
+  animation: wave 2s infinite linear; /* Activate animation on hover */
+}
