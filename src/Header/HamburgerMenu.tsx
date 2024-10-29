@@ -25,8 +25,8 @@ export default function HamburgerMenu() {
         <Image
           src={menu}
           alt="menu"
-          height={40}
-          width={40}
+          height={42}
+          width={42}
           className="rounded-xl "
         />
       </div>

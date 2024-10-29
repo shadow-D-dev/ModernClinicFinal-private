@@ -24,9 +24,9 @@ export default function Header() {
         {/* fix it later by changing logo as its just about the size taken by the logo */}
         <div className="flex-1 flex justify-start items-center">
           <Image
-            src={test}
+            src={logo}
             alt="logo"
-            className="w-36 h-36 md:w-52 md:h-52 sm:w-44 sm:h-44"
+            className="w-24 h-24 md:w-40 md:h-40 sm:w-28 sm:h-28 mt-4"
           />
         </div>
         <div className="flex-2 lg:text-2xl    hidden  xl:flex  items-center gap-14">
