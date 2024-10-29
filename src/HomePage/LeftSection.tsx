@@ -1,12 +1,12 @@
 import Image from "next/image";
 import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
-import phone from "@/../public/PhoneIcon.svg";
 import add from "@/../public/AddIcon.svg";
 import AnimatedCount from "@/animation/AnimatedCount";
+import CallButtonComp from "@/Components/CallButtonComp";
 export default function LeftSection() {
   return (
-    <div className="font-plusJakarta  font-bold lg:p-6 mt-6 md:mt-0">
+    <div className="font-plusJakarta  font-bold lg:p-6 lg:pt-0 mt-6 md:mt-0">
       {/* Heading starts here */}
 
       {/* 1st heading */}
@@ -50,7 +50,7 @@ export default function LeftSection() {
       </p>
       <div>
         <div>
-          <div className=" border-t-2 border-b-2 border-gray-400 mt-8 flex p-2 lg:p-7 text-3xl lg:text-5xl  md:gap-16 lg:w-[700px]">
+          <div className=" border-t-[1px] border-b-[1px] border-gray-500 mt-8 flex p-2 lg:p-7 text-3xl lg:text-5xl  md:gap-16 lg:w-[700px]">
             <div className="flex lg:gap-5 flex-col items-start flex-1 justify-start">
               <div className="font-plusJakarta font-bold flex justify-center">
                 <AnimatedCount target={24} duration={5} suffix={"X 7"} />
@@ -70,8 +70,8 @@ export default function LeftSection() {
                 <span>Patient</span>
               </p>
             </div>
-            <div className="flex flex-1 lg:gap-5 flex-col items-end ">
-              <div className="font-plusJakarta font-bold flex items-center justify-center ">
+            <div className="flex flex-1 lg:gap-5 flex-col  items-center">
+              <div className="font-plusJakarta font-bold ">
                 <AnimatedCount target={15} duration={5} suffix={"+"} />
               </div>
               <p className="text-lg font-bold flex  md:gap-2 flex-col md:flex-row  justify-center items-center">
@@ -84,10 +84,7 @@ export default function LeftSection() {
       </div>
 
       <div className=" flex gap-4 md:gap-10  text-md md:text-xl mt-6 md:mt-10 p-2">
-        <button className=" flex gap-4 bg-[#5e5eee] rounded-[100px] px-6 py-3 md:px-8 md:py-4 justify-center items-center">
-          <Image src={phone} alt="phoneicon" /> Book Now
-        </button>
-
+        <CallButtonComp />
         <button className="flex gap-4  rounded-[100px] px-6 md:px-8 py-3 md:py-4 border border-white text-center">
           <Image src={add} alt="plusicon" />
           Enquries

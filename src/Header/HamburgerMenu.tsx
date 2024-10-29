@@ -32,7 +32,7 @@ export default function HamburgerMenu() {
       </div>
 
       {isVisible ? (
-        <div className="flex flex-col items-start absolute bg-[#5e5eee] text-white w-screen left-0 top-[70px] gap-2 text-lg p-2 md:hidden lg:hidden">
+        <div className="flex flex-col items-start absolute bg-[#5e5eee] text-white w-screen -right-4 top-[52px] gap-2 text-lg p-2 md:hidden lg:hidden">
           {displayPages()}
         </div>
       ) : null}
