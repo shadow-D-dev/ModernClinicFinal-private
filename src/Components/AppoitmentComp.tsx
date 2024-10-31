@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import phone from "@/../Public/PhoneIcon.svg";
 import plus from "@/../Public/AddIcon.svg";
 import time from "@/../Public/OpeningHours.svg";
+import PlusButton from "@/animation/PlusButton";
 
 export default function AppointmentComp() {
   const [isVisible, setIsVisible] = useState(false);
@@ -86,10 +87,7 @@ export default function AppointmentComp() {
             animate={isVisible ? "visible" : "hidden"}
             custom={2} // Incremental delay for stagger effect
           >
-            <button className="flex gap-2 bg-[#5e5eee] rounded-[100px] px-6 py-3 xl:px-8 xl:py-5 text-white text-md xl:text-xl font-plusJakarta font-bold">
-              Make An Appointment
-              <Image src={plus} alt="plus icon" className="h-4 w-4 mt-1" />
-            </button>
+            <PlusButton text={"Make An Appointment"} />
           </motion.div>
         </div>
       </div>

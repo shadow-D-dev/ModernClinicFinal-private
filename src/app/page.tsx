@@ -3,6 +3,7 @@ import AppointmentComp from "@/Components/AppoitmentComp";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
 import Services from "@/Services/Services";
+import WhyUs from "@/WhyUs/WhyUs";
 export default function Home() {
   return (
     <div className="relative">
@@ -22,6 +23,9 @@ export default function Home() {
       </div>
       <div className="">
         <Services />
+      </div>
+      <div>
+        <WhyUs />
       </div>
     </div>
   );

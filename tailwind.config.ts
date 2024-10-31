@@ -10,6 +10,7 @@ const config: Config = {
     "./src/animation//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Commitment//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Services//**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/WhyUs//**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
