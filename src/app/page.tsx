@@ -1,5 +1,8 @@
+import CommitMentComp from "@/Commitment/CommitMent";
+import AppointmentComp from "@/Components/AppoitmentComp";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
+import Services from "@/Services/Services";
 export default function Home() {
   return (
     <div className="relative">
@@ -8,8 +11,17 @@ export default function Home() {
       <div className="relative z-10">
         <Header />
       </div>
-      <div className="absolute">
+      <div className="">
         <HomePage />
+      </div>
+      <div className="">
+        <AppointmentComp />
+      </div>
+      <div>
+        <CommitMentComp />
+      </div>
+      <div className="">
+        <Services />
       </div>
     </div>
   );
