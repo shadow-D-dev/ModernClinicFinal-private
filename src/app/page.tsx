@@ -3,6 +3,7 @@ import AppointmentComp from "@/Components/AppoitmentComp";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
 import Services from "@/Services/Services";
+import Testimonials from "@/Testimonials/Testimonials";
 import WhyUs from "@/WhyUs/WhyUs";
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
       </div>
       <div>
         <WhyUs />
+      </div>
+      <div className="relative -top-72">
+        <Testimonials />
       </div>
     </div>
   );
