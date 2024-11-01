@@ -2,7 +2,7 @@ import Image from "next/image";
 import voiletarrow from "@/../public/Violte-Arrow.svg";
 import logo from "@/../public/ShreeBalajiLogo.png";
 import HamburgerMenu from "./HamburgerMenu";
-import HoverEffect from "@/Animation/animatedArrow";
+import HoverEffect from "@/Animation/AnimatedArrow";
 
 export default function Header() {
   const pages: string[] = [
