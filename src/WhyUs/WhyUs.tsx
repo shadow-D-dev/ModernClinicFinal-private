@@ -8,11 +8,11 @@ import teeth from "@/../public/Loader.svg";
 import PlusButton from "@/animation/PlusButton";
 export default function WhyUs() {
   return (
-    <div className=" relative -top-60 font-plusJakarta">
+    <div className=" relative -top-60 font-plusJakarta ">
       <div className=" w-screen h-[1665px] xl:h-[827px] absolute  bg-gradient-to-r from-[#21214e] to-[#0F1031]"></div>
       <div className="flex flex-col justify-center items-center relative pt-32 xl:pt-44">
-        <div className="flex flex-col xl:flex-row xl:w-[1500px] w-screen  ">
-          <div className="flex-1 flex flex-col gap-6 xl:mt-36 ">
+        <div className="flex flex-col xl:flex-row xl:w-[1500px] w-screen p-4 xl:p-0 ">
+          <div className="flex-1 flex flex-col gap-6 xl:mt-36  ">
             <p className="flex gap-4  items-center font-bold text-2xl">
               <Image src={teeth} alt="teeth" className="h-10 w-10" />
               <span>WHY CHOOSE US</span>

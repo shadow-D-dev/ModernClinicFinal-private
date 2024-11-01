@@ -12,6 +12,7 @@ const config: Config = {
     "./src/Services//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/WhyUs//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Testimonials//**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/ContactUsMap//**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {

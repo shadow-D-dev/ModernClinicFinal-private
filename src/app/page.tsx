@@ -1,5 +1,6 @@
 import CommitMentComp from "@/Commitment/CommitMent";
 import AppointmentComp from "@/Components/AppoitmentComp";
+import ContactUsMap from "@/ContactUsMap/ContactUsMapContactUsMap";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
 import Services from "@/Services/Services";
@@ -30,6 +31,9 @@ export default function Home() {
       </div>
       <div className="relative -top-72">
         <Testimonials />
+      </div>
+      <div className="relative xl:-top-[390px] top-28 ">
+        <ContactUsMap />
       </div>
     </div>
   );
