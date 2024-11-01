@@ -1,7 +1,7 @@
 import Image from "next/image";
 import tick from "@/../public/tick.svg";
 import arrow from "@/../public/Violte-Arrow.svg";
-import HoverEffect from "@/Animation/AnimatedArrow";
+import HoverEffect from "../Animation/AnimatedArrow";
 
 export default function RightCommitMentComp() {
   return (

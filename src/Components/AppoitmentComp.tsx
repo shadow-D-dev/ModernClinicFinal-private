@@ -4,7 +4,7 @@ import { motion } from "framer-motion"; // Import motion from framer-motion
 import { useEffect, useState } from "react";
 import phone from "@/../public/PhoneIcon.svg";
 import time from "@/../public/OpeningHours.svg";
-import PlusButton from "@/Animation/PlusButton";
+import PlusButton from "../Animation/PlusButton";
 
 export default function AppointmentComp() {
   const [isVisible, setIsVisible] = useState(false);

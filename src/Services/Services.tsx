@@ -6,7 +6,7 @@ import service1 from "@/../public/Service1.jpg";
 import service2 from "@/../public/Service2.jpg";
 import service3 from "@/../public/Service3.jpg";
 import voiletarrow from "@/../public/Violte-Arrow.svg";
-import HoverEffect from "@/Animation/AnimatedArrow";
+import HoverEffect from "../Animation/AnimatedArrow";
 
 export default function Services() {
   return (

@@ -5,7 +5,7 @@ import Reason2 from "@/../public/WhyChooseUs2.svg";
 import Reason3 from "@/../public/WhyChooseUs3.svg";
 import WhyUsRight from "./WhyUsRight";
 import teeth from "@/../public/Loader.svg";
-import PlusButton from "@/Animation/PlusButton";
+import PlusButton from "../Animation/PlusButton";
 export default function WhyUs() {
   return (
     <div className=" relative -top-60 font-plusJakarta ">
