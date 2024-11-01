@@ -1,11 +1,10 @@
 "use client";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
 export default function HomePageHeading() {
   return (
-    <motion.div className="text-4xl sm:text-5xl lg:text-7xl">
+    <div className="text-4xl sm:text-5xl lg:text-7xl">
       <p className="flex flex-wrap items-center gap-2 lg:gap-4">
         <span>Your</span>
         <span>smile</span>
@@ -31,7 +30,7 @@ export default function HomePageHeading() {
         <span> tomorrow</span>
       </p>
 
-      <motion.p
+      <p
         initial={{ y: 30, opacity: 0 }} // Start position and opacity
         animate={{ y: 0, opacity: 1 }} // End position and opacity
         transition={{ duration: 0.5 }} // Animation properties
@@ -39,7 +38,7 @@ export default function HomePageHeading() {
       >
         Experience top-quality dental care focused on your smile&apos;s health
         and beauty. Trust us to create a brighter, healthier tomorrow
-      </motion.p>
-    </motion.div>
+      </p>
+    </div>
   );
 }

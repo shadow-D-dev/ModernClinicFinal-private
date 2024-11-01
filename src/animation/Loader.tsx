@@ -83,72 +83,80 @@
 // export default LoadingScreen;
 
 // app/components/LoadingScreen.tsx
-"use client"; // Client component
-
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import teeth from "@/../public/Loader.svg"; // Update with the correct path to your SVG logo
-
-const LoadingScreen: React.FC = () => {
-  const [backgroundOpacity, setBackgroundOpacity] = useState(1);
-  const [contentOpacity, setContentOpacity] = useState(1);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setBackgroundOpacity(0); // Fade out background
-
-      // After fading out background, fade out content
-      setTimeout(() => {
-        setContentOpacity(0);
-      }, 300); // Adjust based on desired timing
-    }, 3000); // Simulated loading time
-
-    return () => clearTimeout(timer); // Cleanup
-  }, []);
-
-  return (
-    <motion.div
-      className="flex justify-center items-center w-screen h-screen bg-[#5e5eee] relative overflow-hidden"
-      initial={{ opacity: 1 }}
-      animate={{ opacity: backgroundOpacity }} // Animate background
-      transition={{ duration: 1 }}
-    >
-      <motion.div
-        className="absolute flex justify-center items-center"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: contentOpacity }} // Animate content
-        transition={{ duration: 0.5 }}
-      >
-        {/* First rotating arc */}
-        <motion.div
-          className="absolute border-[0.5px] border-white rounded-full w-[20vw] h-[20vw] min-w-[100px] min-h-[100px]"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
-          style={{
-            clipPath: "polygon(0% 0%, 20% 0%, 20% 100%, 0% 100%)",
-          }}
-        />
-
-        {/* Second rotating arc */}
-        <motion.div
-          className="absolute border-[0.5px] border-white rounded-full w-[20vw] h-[20vw] min-w-[100px] min-h-[100px]"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
-          style={{
-            clipPath: "polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%)",
-          }}
-        />
-
-        {/* Centered SVG */}
-        <Image
-          src={teeth}
-          alt="Loading Logo"
-          className="p-4 w-[15vw] h-[15vw] min-w-[80px] min-h-[80px]"
-        />
-      </motion.div>
-    </motion.div>
-  );
-};
-
-export default LoadingScreen;
+//
+//
+//
+//
+//
+//
+//
+//
+// "use client"; // Client component
+//
+// import { motion } from "framer-motion";
+// import Image from "next/image";
+// import { useEffect, useState } from "react";
+// import teeth from "@/../public/Loader.svg"; // Update with the correct path to your SVG logo
+//
+// const LoadingScreen: React.FC = () => {
+//   const [backgroundOpacity, setBackgroundOpacity] = useState(1);
+//   const [contentOpacity, setContentOpacity] = useState(1);
+//
+//   useEffect(() => {
+//     const timer = setTimeout(() => {
+//       setBackgroundOpacity(0); // Fade out background
+//
+//       // After fading out background, fade out content
+//       setTimeout(() => {
+//         setContentOpacity(0);
+//       }, 300); // Adjust based on desired timing
+//     }, 3000); // Simulated loading time
+//
+//     return () => clearTimeout(timer); // Cleanup
+//   }, []);
+//
+//   return (
+//     <motion.div
+//       className="flex justify-center items-center w-screen h-screen bg-[#5e5eee] relative overflow-hidden"
+//       initial={{ opacity: 1 }}
+//       animate={{ opacity: backgroundOpacity }} // Animate background
+//       transition={{ duration: 1 }}
+//     >
+//       <motion.div
+//         className="absolute flex justify-center items-center"
+//         initial={{ opacity: 1 }}
+//         animate={{ opacity: contentOpacity }} // Animate content
+//         transition={{ duration: 0.5 }}
+//       >
+//         {/* First rotating arc */}
+//         <motion.div
+//           className="absolute border-[0.5px] border-white rounded-full w-[20vw] h-[20vw] min-w-[100px] min-h-[100px]"
+//           animate={{ rotate: 360 }}
+//           transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+//           style={{
+//             clipPath: "polygon(0% 0%, 20% 0%, 20% 100%, 0% 100%)",
+//           }}
+//         />
+//
+//         {/* Second rotating arc */}
+//         <motion.div
+//           className="absolute border-[0.5px] border-white rounded-full w-[20vw] h-[20vw] min-w-[100px] min-h-[100px]"
+//           animate={{ rotate: 360 }}
+//           transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+//           style={{
+//             clipPath: "polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%)",
+//           }}
+//         />
+//
+//         {/* Centered SVG */}
+//         <Image
+//           src={teeth}
+//           alt="Loading Logo"
+//           className="p-4 w-[15vw] h-[15vw] min-w-[80px] min-h-[80px]"
+//         />
+//       </motion.div>
+//     </motion.div>
+//   );
+// };
+//
+// export default LoadingScreen;
