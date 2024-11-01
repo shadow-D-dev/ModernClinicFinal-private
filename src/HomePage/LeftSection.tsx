@@ -1,6 +1,6 @@
-import AnimatedCount from "@/animation/AnimatedCount";
-import AnimatedButtons from "@/animation/AnimatedButtons";
-import HomePageHeading from "@/animation/HomePageHeading";
+import AnimatedCount from "@/Animation/AnimatedCount";
+import AnimatedButtons from "@/Animation/AnimatedButtons";
+import HomePageHeading from "@/Animation/HomePageHeading";
 export default function LeftSection() {
   return (
     <div className="font-plusJakarta  text-white font-bold lg:p-6 lg:pt-0 mt-6 lg:mt-0">

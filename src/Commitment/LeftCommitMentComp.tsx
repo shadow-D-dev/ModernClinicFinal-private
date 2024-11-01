@@ -1,7 +1,7 @@
 import Image from "next/image";
-import commit1 from "@/../Public/Journeytretment.jpg";
-import commit2 from "@/../Public/HospitalLook.jpg";
-import Exp from "@/../Public/Experience.png";
+import commit1 from "@/../public/Journeytretment.jpg";
+import commit2 from "@/../public/HospitalLook.jpg";
+import Experience from "@/../public/Experience.png";
 export default function LeftCommitMentComp() {
   return (
     <div className="flex justify-center items-center xl:justify-start overflow-hidden">
@@ -22,7 +22,7 @@ export default function LeftCommitMentComp() {
         </div>
         <div className="relative -top-64 xl:-top-[750px] xl:-right-96">
           <Image
-            src={Exp}
+            src={Experience}
             alt="Experience"
             className="h-24 w-24 xl:h-auto xl:w-auto"
           />

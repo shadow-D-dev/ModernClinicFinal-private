@@ -1,6 +1,6 @@
-import plus from "@/../Public/AddIcon.svg";
+import add from "@/../public/AddIcon.svg";
 import Image from "next/image";
-import Phoneicon from "@/../Public/PhoneIcon.svg";
+import phone from "@/../public/PhoneIcon.svg";
 
 export default function ContactUsMap() {
   return (
@@ -89,13 +89,13 @@ export default function ContactUsMap() {
                   <button className=" flex justify-center items-center gap-2 xl:gap-4 bg-[#5e5eee] rounded-[100px] p-2  xl:p-4 text-white text-md xl:text-xl font-plusJakarta font-bold">
                     Make An Appoitment
                     <Image
-                      src={plus}
+                      src={add}
                       alt="phoneicon"
                       className="h-4 w-4 xl:h-6 xl:w-6"
                     />
                   </button>
                   <button className=" flex gap-4 bg-[#5e5eee] rounded-[100px] p-2 xl:p-4 text-white text-xl font-bold">
-                    <Image src={Phoneicon} alt="phoneicon" />
+                    <Image src={phone} alt="phoneicon" />
                   </button>
                 </div>
               </div>

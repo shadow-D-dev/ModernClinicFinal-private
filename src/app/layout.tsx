@@ -42,14 +42,14 @@ export default function RootLayout({
   );
 }
 
-// // app/layout.tsx
+// app/layout.tsx
 // "use client"; // Client component
 //
 // import localFont from "next/font/local";
 // import "./globals.css";
 // import { Plus_Jakarta_Sans } from "next/font/google";
 // import { useEffect, useState } from "react"; // Import hooks
-// import LoadingScreen from "./components/LoadingScreen"; // Import loading component
+// import LoadingScreen from "@/Animation/Loader";
 //
 // const Jakarata = Plus_Jakarta_Sans({
 //   subsets: ["latin"],
@@ -78,7 +78,7 @@ export default function RootLayout({
 //   useEffect(() => {
 //     const timer = setTimeout(() => {
 //       setLoading(false); // Set loading to false after 3 seconds
-//     }, 3000);
+//     }, 100);
 //
 //     return () => clearTimeout(timer); // Cleanup timer
 //   }, []);
@@ -92,3 +92,4 @@ export default function RootLayout({
 //       </body>
 //     </html>
 //   );
+// }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import test from "@/../Public/HomePageTreatment.jpg";
+import treatment from "@/../public/HomePageTreatment.jpg";
 import StatsTestimonials from "./StatsTestimonials";
 import TestimonialsComp from "./TestimonialsComp";
 
@@ -31,7 +31,7 @@ export default function Testimonials() {
               <div className="flex-1 flex flex-col ">
                 <div className="flex justify-center items-center xl:justify-start xl:items-center">
                   <Image
-                    src={test}
+                    src={treatment}
                     alt="test"
                     className="h-96 w-96 xl:h-[500px] xl:w-[470px] rounded-[50px] "
                   />

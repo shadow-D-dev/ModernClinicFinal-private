@@ -1,6 +1,6 @@
 import Image from "next/image";
-import quote from "@/../Public/quote.svg";
-import arrow from "@/../public/WhieArrowSvg.svg";
+import quote from "@/../public/quote.svg";
+import whitearrow from "@/../public/WhieArrowSvg.svg";
 export default function TestimonialsComp() {
   return (
     <div className="flex flex-col gap-4 font-plusJakarta p-4">
@@ -32,10 +32,10 @@ export default function TestimonialsComp() {
         </div>
         <div className="flex gap-6 xl:justify-end xl:items-end">
           <div className="h-10 w-10 xl:h-12 xl:w-12 bg-[#5e5eee] rounded-lg">
-            <Image src={arrow} alt="arrow" className="p-2" />
+            <Image src={whitearrow} alt="arrow" className="p-2" />
           </div>
           <div className="h-10 w-10 xl:h-12 xl:w-12 bg-[#5e5eee] rounded-lg">
-            <Image src={arrow} alt="arrow" className="p-2 rotate-180" />
+            <Image src={whitearrow} alt="arrow" className="p-2 rotate-180" />
           </div>
         </div>
       </div>

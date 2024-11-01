@@ -1,6 +1,6 @@
 import Image from "next/image";
 import tick from "@/../Public/tick.svg";
-import HoverEffect from "@/animation/animatedArrow";
+import HoverEffect from "@/Animation/animatedArrow";
 import arrow from "@/../public/Violte-Arrow.svg";
 
 export default function RightCommitMentComp() {
@@ -8,7 +8,7 @@ export default function RightCommitMentComp() {
     <div className="relative -top-32 xl:top-0">
       {" "}
       {/* added relative coz had issues with vacant space on mobile*/}
-      <div className="font-plusJakarta xl:mt-16 flex flex-col gap-6  ">
+      <div className="font-plusJakarta xl:mt-16 flex flex-col gap-6  p-4 xl:p-0">
         <p className="text-6xl font-extrabold">
           <span className="text-[#5e5eee]">Your Journey</span> to a Healthier
           Smile Begins Here

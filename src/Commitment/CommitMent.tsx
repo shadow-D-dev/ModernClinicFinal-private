@@ -7,8 +7,8 @@ export default function CommitMentComp() {
         <div className="bg-white w-screen h-[1500px] xl:h-[1000px] relative">
           {""}
         </div>
-        <div className="absolute top-24 w-screen  flex justify-center items-center ">
-          <div className="text-black w-[1500px] mt-20">
+        <div className="absolute top-32  w-screen  flex justify-center items-center ">
+          <div className="text-black w-[1700px]">
             <div className="flex flex-col xl:flex-row">
               <div className="xl:w-1/2">
                 <LeftCommitMentComp />

@@ -21,7 +21,9 @@ export default function HomePageHeading() {
         <Image
           src={care}
           alt="Image related to dental care"
-          className="rounded-full mt-1 md:mt-3 h-8 w-20 md:h-12 md:w-32"
+          width={90}
+          height={80}
+          className="rounded-full mt-1 md:mt-3  md:h-12 md:w-32"
         />
         <span className="flex-shrink-0">care</span>
 

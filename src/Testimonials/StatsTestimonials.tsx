@@ -1,6 +1,6 @@
 import Image from "next/image";
-import star from "@/../Public/Star.svg";
-import AnimatedCount from "@/animation/AnimatedCount";
+import star from "@/../public/Star.svg";
+import AnimatedCount from "@/Animation/AnimatedCount";
 
 export default function StatsTestimonials() {
   return (

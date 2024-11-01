@@ -88,7 +88,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import teethLogo from "@/../public/Loader.svg"; // Update with the correct path to your SVG logo
+import teeth from "@/../public/Loader.svg"; // Update with the correct path to your SVG logo
 
 const LoadingScreen: React.FC = () => {
   const [backgroundOpacity, setBackgroundOpacity] = useState(1);
@@ -142,7 +142,7 @@ const LoadingScreen: React.FC = () => {
 
         {/* Centered SVG */}
         <Image
-          src={teethLogo}
+          src={teeth}
           alt="Loading Logo"
           className="p-4 w-[15vw] h-[15vw] min-w-[80px] min-h-[80px]"
         />

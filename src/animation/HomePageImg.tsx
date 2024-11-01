@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
-import image from "@/../public/HomePageTreatment.jpg";
+import treatment from "@/../public/HomePageTreatment.jpg";
 
 export default function HomePageImg() {
   return (
     <div className="lg:mr-10 p-2 xl:p-0 ">
       <motion.img
-        src={image.src} // Use image's `src` directly with motion.img
+        src={treatment.src} // Use image's `src` directly with motion.img
         alt="treatment image"
         initial={{ width: "0%" }} // Start at 10% width
         animate={{ width: "100%" }} // Animate to 100% width
