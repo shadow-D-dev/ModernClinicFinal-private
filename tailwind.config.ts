@@ -7,7 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Header/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/HomePage//**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/animation//**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/Animation//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Commitment//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/Services//**/*.{js,ts,jsx,tsx,mdx}",
     "./src/WhyUs//**/*.{js,ts,jsx,tsx,mdx}",
