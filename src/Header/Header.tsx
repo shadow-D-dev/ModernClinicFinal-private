@@ -29,10 +29,10 @@ export default function Header() {
           <Image
             src={logo}
             alt="logo"
-            className="w-24 h-24 md:w-32 md:h-32 sm:w-28 sm:h-28 mt-4 xl:h-40 xl:w-40"
+            className="w-24 h-24 md:w-32 md:h-32 sm:w-28 sm:h-28 mt-4 lg:h-40 lg:w-40"
           />
         </div>
-        <div className="flex-2 lg:text-2xl     hidden  xl:flex  items-center gap-14">
+        <div className="flex-2 lg:text-2xl     hidden  lg:flex  items-center gap-14">
           {displayPages()}
         </div>
         <div className=" flex-1 md:flex justify-end items-center pr-8">

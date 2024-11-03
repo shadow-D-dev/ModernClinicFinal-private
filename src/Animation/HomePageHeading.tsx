@@ -5,7 +5,7 @@ import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
 export default function HomePageHeading() {
   return (
-    <motion.div className="text-4xl sm:text-5xl lg:text-7xl">
+    <motion.div className="text-4xl sm:text-5xl lg:text-6xl">
       <p className="flex flex-wrap items-center gap-2 lg:gap-4">
         <span>Your</span>
         <span>smile</span>

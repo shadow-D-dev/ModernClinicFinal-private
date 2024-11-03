@@ -31,7 +31,7 @@ export default function AppointmentComp() {
   return (
     <div className="w-screen flex justify-center items-center">
       <div className="">
-        <div className="flex flex-col xl:flex-row bg-white rounded-[40px] xl:rounded-3xl p-6 xl:w-[1650px] xl:p-10 gap-4 xl:gap-16 shadow-sm shadow-gray-200 relative xl:-top-20 -top-32 z-10">
+        <div className="flex flex-col lg:flex-row bg-white rounded-[40px] xl:rounded-3xl p-6 xl:w-[1650px] xl:p-10 gap-4 xl:gap-16 shadow-sm shadow-gray-200 relative lg:-top-44 -top-32 z-10">
           {/* First Div */}
           <motion.div
             className="flex flex-1 xl:border xl:border-white xl:border-r-black gap-6"
@@ -40,11 +40,11 @@ export default function AppointmentComp() {
             animate={isVisible ? "visible" : "hidden"} // Trigger animation based on visibility
             custom={0} // Custom value for delay
           >
-            <div className="rounded-2xl bg-[#5e5eee] p-4 xl:p-6 justify-center items-center">
+            <div className="rounded-2xl bg-[#5e5eee] p-4 lg:p-6 justify-center items-center">
               <Image
                 src={phone}
                 alt="phone"
-                className="w-6 h-6 xl:w-8 xl:h-8"
+                className="w-6 h-6 lg:w-8 lg:h-8"
               />
             </div>
             <div className="flex flex-col gap-0 xl:gap-2 justify-center">
@@ -65,8 +65,8 @@ export default function AppointmentComp() {
             animate={isVisible ? "visible" : "hidden"}
             custom={1} // Incremental delay for stagger effect
           >
-            <div className="rounded-2xl bg-[#5e5eee] p-4 xl:p-6 justify-center items-center xl:h-auto">
-              <Image src={time} alt="time" className="xl:w-8 xl:h-8 w-6 h-6" />
+            <div className="rounded-2xl bg-[#5e5eee] p-4 lg:p-6 justify-center items-center xl:h-auto">
+              <Image src={time} alt="time" className="lg:w-8 lg:h-8 w-6 h-6" />
             </div>
             <div className="flex flex-col gap-0 xl:gap-2 justify-center">
               <p className="text-lg xl:text-2xl font-plusJakarta font-bold text-black">
