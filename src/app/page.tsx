@@ -9,7 +9,7 @@ import Testimonials from "@/Testimonials/Testimonials";
 import WhyUs from "@/WhyUs/WhyUs";
 export default function Home() {
   return (
-    <div className="">
+    <div className="overflow-hidden">
       {/* made this relative bcoz header animations were not working*/}
       <div>
         <Header />

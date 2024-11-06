@@ -24,7 +24,7 @@ const config: Config = {
         plusJakarta: "var(--font-plus-jakarta)",
       },
       screens: {
-        xs: "350px", // Custom breakpoint for 350px
+        xs: { max: "349px" }, // Custom breakpoint for 350px
       },
     },
   },

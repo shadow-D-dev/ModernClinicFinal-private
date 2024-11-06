@@ -54,7 +54,7 @@ export default function HamburgerMenu() {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="flex flex-col items-start absolute bg-[#5e5eee] text-white w-screen -right-4 top-[52px] gap-2 text-lg p-2 md:hidden lg:hidden"
+          className="flex flex-col items-start absolute bg-[#5e5eee] text-white w-screen -right-0 top-[64px] gap-2 text-lg p-2 md:hidden lg:hidden"
         >
           {displayPages()}
         </motion.div>

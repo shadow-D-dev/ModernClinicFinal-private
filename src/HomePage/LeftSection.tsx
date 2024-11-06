@@ -7,14 +7,14 @@ export default function LeftSection() {
       <HomePageHeading />
       <div>
         <div>
-          <div className=" border-t-[1px] border-b-[1px] border-gray-500 mt-6 lg:mt-8 flex pt-2 pb-2 lg:pt-6 lg:pb-6   text-3xl lg:text-4xl  2xl:text-5xl   justify-between">
+          <div className=" border-t-[1px] border-b-[1px] border-gray-500 mt-6 lg:mt-8 flex pt-2 pb-2 lg:pt-6 lg:pb-6   text-3xl lg:text-4xl  2xl:text-5xl   justify-between xs:flex-col">
             {/* 1st stat*/}
 
-            <div className="flex  md:gap-3 2xl:gap-5 flex-col items-start  ">
+            <div className=" flex  md:gap-3 2xl:gap-5 flex-col items-start xs:items-center ">
               <div className="font-plusJakarta font-bold flex justify-center">
                 <AnimatedCount target={12} duration={5} suffix={"X7"} />
               </div>
-              <p className="text-lg font-bold flex flex-col md:flex-row  md:gap-2">
+              <p className="text-lg font-thin md:font-bold flex flex-col md:flex-row  md:gap-2">
                 <span>Emergency </span>
                 <span>Service</span>
               </p>
@@ -25,7 +25,7 @@ export default function LeftSection() {
               <div className="font-plusJakarta font-bold flex justify-center md:items-start">
                 <AnimatedCount target={25} duration={5} suffix={"K"} />
               </div>
-              <p className="text-lg font-bold flex  md:gap-2 flex-col md:flex-row">
+              <p className="text-lg  font-thin md:font-bold flex  md:gap-2 flex-col md:flex-row">
                 <span>Recover </span>
                 <span>Patient</span>
               </p>
@@ -36,7 +36,7 @@ export default function LeftSection() {
               <div className="font-plusJakarta font-bold ">
                 <AnimatedCount target={15} duration={5} suffix={"+"} />
               </div>
-              <p className="text-lg font-bold flex md:gap-2 flex-col md:flex-row  justify-center items-center">
+              <p className="text-lg font-thin md:font-bold flex md:gap-2 flex-col md:flex-row  justify-center items-center">
                 <span>Market </span>
                 <span>Experience</span>
               </p>

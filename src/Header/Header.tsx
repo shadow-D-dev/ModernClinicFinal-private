@@ -21,7 +21,7 @@ export default function Header() {
       );
     });
   return (
-    <div className="w-full flex justify-center items-center bg-white pl-4 pr-4 md:pl-0 md:pr-0">
+    <div className="w-full flex justify-center items-center bg-white pr-4 md:pl-0 md:pr-0">
       {/*     wrapper div for all the three divs  */}
       <div className="flex justify-between items-center  bg-white text-gray-950  h-16 lg:h-20  transition-all duration-300 ease-in-out xl:max-w-[1300px] w-full">
         {/*     Left div */}
