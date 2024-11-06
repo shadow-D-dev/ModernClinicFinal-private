@@ -21,34 +21,38 @@ export default function Header() {
       );
     });
   return (
-    <div className="w-screen flex justify-center items-center bg-white">
-      <div className="flex  bg-white text-gray-950 w-[1700px] h-[70px] lg:h-[100px] md:h-[80px] sm:h-[70px] p-2  relative ">
-        {/* There is an issue with this approach the space between middle div is not consistent will might  */}
-        {/* fix it later by changing logo as its just about the size taken by the logo */}
+    <div className="w-full flex justify-center items-center bg-white pl-4 pr-4 md:pl-0 md:pr-0">
+      {/*     wrapper div for all the three divs  */}
+      <div className="flex justify-between items-center  bg-white text-gray-950  h-16 lg:h-20  transition-all duration-300 ease-in-out xl:max-w-[1300px] w-full">
+        {/*     Left div */}
         <div className="flex-1 flex justify-start items-center">
           <Image
             src={logo}
             alt="logo"
-            className="w-24 h-24 md:w-32 md:h-32 sm:w-28 sm:h-28 mt-4 lg:h-40 lg:w-40"
+            className="w-24 h-24 md:w-28 md:h-28  mt-2 lg:h-32 lg:w-32 transition-all duration-300 ease-in-out"
           />
         </div>
-        <div className="flex-2 lg:text-2xl     hidden  lg:flex  items-center gap-14">
+        {/*    middle div  */}
+        <div className=" hidden  lg:flex flex-2 lg:items-center gap-12 lg:text-xl font-bold">
           {displayPages()}
         </div>
-        <div className=" flex-1 md:flex justify-end items-center pr-8">
-          <div className="hidden md:flex lg:flex">
+        {/* Last div */}
+
+        <div className="flex-1 flex justify-end items-center">
+          <div className="hidden md:flex transition-all duration-300">
             <HoverEffect
               text={"Book Appointment"}
               alt={"arrowComp"}
               arrow={voiletarrow}
-              height={25}
-              width={25}
+              height={22}
+              width={22}
             />
           </div>
-          <div className="flex-1  md:hidden flex justify-end mt-2 relative -right-6 sm:mr-6">
+          <div className=" md:hidden flex justify-end transition-all duration-300">
             <HamburgerMenu />
           </div>
         </div>
+        {/*      Last div ends here  */}
       </div>
     </div>
   );

@@ -5,8 +5,8 @@ import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
 export default function HomePageHeading() {
   return (
-    <motion.div className="text-4xl sm:text-5xl lg:text-6xl">
-      <p className="flex flex-wrap items-center gap-2 lg:gap-4">
+    <motion.div className="text-4xl sm:text-5xl lg:text-[56px] font-plusJakarta">
+      <p className="flex flex-wrap items-center gap-2 lg:gap-2 font-extrabold">
         <span>Your</span>
         <span>smile</span>
         <Image
@@ -30,10 +30,10 @@ export default function HomePageHeading() {
       </p>
 
       <motion.p
-        initial={{ y: 30, opacity: 0 }} // Start position and opacity
-        animate={{ y: 0, opacity: 1 }} // End position and opacity
-        transition={{ duration: 0.5 }} // Animation properties
-        className="text-xl mt-6 md:mt-10 font-thin md:font-bold "
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-lg xl:text-xl mt-6 md:mt-10 font-thin md:font-bold"
       >
         Experience top-quality dental care focused on your smile&apos;s health
         and beauty. Trust us to create a brighter, healthier tomorrow

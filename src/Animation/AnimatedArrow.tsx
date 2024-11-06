@@ -22,13 +22,13 @@ const HoverEffect: React.FC<HoverEffectProps> = ({
 
   return (
     <motion.div
-      className="bg-[#5e5eee] text-white xl:p-3  p-2 xl:pl-6 flex rounded-[30px]  gap-4 items-center"
+      className="bg-[#5e5eee] text-white xl:p-2 xl:pl-4 xl:pr-2  p-2  flex rounded-[30px]  gap-2 items-center"
       onHoverStart={() => setIsHovered(true)} // Start hover state
       onHoverEnd={() => setIsHovered(false)} // End hover state
       animate={{ backgroundColor: isHovered ? "#1A1A73" : "#5e5eee" }}
       transition={{ duration: 0.3 }}
     >
-      <p className="xl:text-xl text-lg font-bold">{text}</p>
+      <p className="xl:text-md text-sm font-bold">{text}</p>
       <motion.div
         className="rounded-full bg-white p-1"
         animate={{ rotate: isHovered ? 45 : 0 }} // Rotate only when parent is hovered

@@ -23,8 +23,12 @@ const config: Config = {
       fontFamily: {
         plusJakarta: "var(--font-plus-jakarta)",
       },
+      screens: {
+        xs: "350px", // Custom breakpoint for 350px
+      },
     },
   },
+
   plugins: [],
 };
 export default config;

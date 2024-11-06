@@ -10,7 +10,11 @@ export default function HomePageImg() {
       initial={{ width: "0%" }}
       animate={{ width: "100%" }}
       transition={{ duration: 1 }}
-      className="rounded-[40px] w-full h-auto md:h-[570px] lg:h-[670px] "
+      className="rounded-[40px] w-full h-auto lg:w-[385px] lg:h-[431px] xl:w-[540px] xl:h-[604px] object-cover"
+      style={{
+        width: "clamp(385px, 34vw + 150px, 540px)", // Gradually scales between 385px and 540px
+        height: "clamp(431px, 38vw + 120px, 604px)", // Gradually scales between 431px and 604px
+      }}
     />
   );
 }
@@ -21,15 +25,19 @@ export default function HomePageImg() {
 //
 // export default function HomePageImg() {
 //   return (
-//     <div className="w-full lg:w-auto flex">
-//       <motion.img
-//         src={image.src}
-//         alt="treatment image"
-//         initial={{ width: "30%" }}
-//         animate={{ width: "100%" }}
-//         transition={{ duration: 1 }}
-//         className="rounded-[40px] w-full sm:h-auto md:h-[500px] lg:h-[600px] xl:h-[600px] object-cover"
-//       />
-//     </div>
+//     <motion.img
+//       src={image.src}
+//       alt="treatment image"
+//       initial={{ width: "0%" }}
+//       animate={{ width: "100%" }}
+//       transition={{ duration: 1 }}
+//       style={{
+//         // Smoothly scale from 385px at md to 540px at xl
+//         width: "clamp(385px, 42vw + 150px, 540px)",
+//         height: "auto", // Maintain aspect ratio
+//       }}
+//       className="rounded-[40px] object-cover transition-all duration-300 ease-in-out
+//                  lg:max-w-[385px] lg:max-h-[431px] xl:max-w-[540px] xl:max-h-[604px]"
+//     />
 //   );
 // }

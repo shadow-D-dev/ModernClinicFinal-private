@@ -1,0 +1,6 @@
+.responsiveImage {
+  /* Width transitions smoothly from 385px to 540px based on viewport */
+  width: clamp(385px, 50vw + 10rem, 540px);
+  height: clamp(431px, 50vw + 10rem, 604px);
+  transition: all 0.3s ease-in-out;
+}
