@@ -17,12 +17,9 @@ export default function Home() {
       <div className="">
         <HomePage />
       </div>
-      {/* <div className=""> */}
-      {/*   <AppointmentComp /> */}
-      {/* </div> */}
-      {/* <div> */}
-      {/*   <CommitMentComp /> */}
-      {/* </div> */}
+      <div>
+        <CommitMentComp />
+      </div>
       {/* <div className=""> */}
       {/*   <Services /> */}
       {/* </div> */}

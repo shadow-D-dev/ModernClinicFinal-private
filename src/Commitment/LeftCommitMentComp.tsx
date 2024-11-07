@@ -4,8 +4,9 @@ import commit2 from "@/../public/HospitalLook.jpg";
 import Experience from "@/../public/Experience.png";
 export default function LeftCommitMentComp() {
   return (
-    <div className="flex justify-center items-center xl:justify-start overflow-hidden">
+    <div className="flex justify-center items-center xl:justify-start ">
       <div className="relative p-2 xl:p-0">
+        {/*First image*/}
         <div className="">
           <Image
             src={commit1}
@@ -13,6 +14,8 @@ export default function LeftCommitMentComp() {
             className="w-80 h-80 xl:w-[450px] xl:h-[450px] rounded-[50px]"
           />
         </div>
+        {/*Second image*/}
+
         <div className="relative -top-28 -right-24 xl:-top-28 xl:-right-36 ">
           <Image
             src={commit2}
@@ -20,6 +23,8 @@ export default function LeftCommitMentComp() {
             className="rounded-[50px] border-white border-8 h-52 w-64 xl:h-[350px] xl:w-[450px] "
           />
         </div>
+        {/*Third image*/}
+
         <div className="relative -top-64 xl:-top-[750px] xl:-right-96">
           <Image
             src={Experience}

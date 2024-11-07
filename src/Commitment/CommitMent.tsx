@@ -1,22 +1,22 @@
+import AppointmentComp from "@/Components/AppoitmentComp";
 import LeftCommitMentComp from "./LeftCommitMentComp";
 import RightCommitMentComp from "./RightCommitMentComp";
 export default function CommitMentComp() {
   return (
-    <div className="">
-      <div className="relative -top-60 xl:-top-40">
-        <div className="bg-white w-screen h-[1500px] xl:h-[1000px] relative">
-          {""}
+    <div className="w-full h-full relative bg-white flex justify-center items-center">
+      <div className="w-[1300px]">
+        {/* first comp aka appointment*/}
+        <div className="relative  -top-32 lg:-top-20 z-10 p-2">
+          <AppointmentComp />
         </div>
-        <div className="absolute top-32  w-screen  flex justify-center items-center ">
-          <div className="text-black w-[1700px]">
-            <div className="flex flex-col xl:flex-row">
-              <div className="xl:w-1/2">
-                <LeftCommitMentComp />
-              </div>
-              <div className="xl:w-1/2">
-                <RightCommitMentComp />
-              </div>
-            </div>
+        {/* combo of the both rest of the comps*/}
+
+        <div className="flex flex-col xl:flex-row text-black">
+          <div className="flex-1">
+            <LeftCommitMentComp />
+          </div>
+          <div className="flex-1">
+            <RightCommitMentComp />
           </div>
         </div>
       </div>
