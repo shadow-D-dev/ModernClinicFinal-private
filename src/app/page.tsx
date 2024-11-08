@@ -23,9 +23,9 @@ export default function Home() {
       <div className="">
         <Services />
       </div>
-      {/* <div> */}
-      {/*   <WhyUs /> */}
-      {/* </div> */}
+      <div>
+        <WhyUs />
+      </div>
       {/* <div className="relative -top-72"> */}
       {/*   <Testimonials /> */}
       {/* </div> */}

@@ -14,12 +14,12 @@ export default function WhyUsRight({
   image,
 }: whyusRightprops) {
   return (
-    <div className="font-plusJakarta h-20 w-[400px] flex gap-6 items-center ">
-      <div className="bg-[#5e5eee] rounded-2xl h-16 ">
-        <Image src={image} alt="icon" className="h-10 w-10 m-3" />
+    <div className="font-plusJakarta flex xs:flex-col gap-6 items-center">
+      <div className="bg-[#5e5eee] rounded-lg">
+        <Image src={image} alt="icon" className="h-14 w-14 p-2" />
       </div>
-      <div className="flex flex-col justify-start items-start">
-        <p className="font-bold text-2xl ">{heading}</p>
+      <div className="flex flex-col">
+        <p className="font-bold text-xl ">{heading}</p>
         <p className="text-md">{subtext1}</p>
         <p className=" text-md">{subtext2}</p>
       </div>
