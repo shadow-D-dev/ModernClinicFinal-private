@@ -22,7 +22,7 @@ const HoverEffect: React.FC<HoverEffectProps> = ({
 
   return (
     <motion.div
-      className="bg-[#5e5eee] text-white xl:p-2 xl:pl-4 xl:pr-2  p-2  flex rounded-[30px]  gap-2 items-center"
+      className="bg-[#5e5eee] text-white lg:p-2 lg:pl-4 lg:pr-2   p-2 xs:flex-col  flex rounded-[30px]  gap-2 items-center"
       onHoverStart={() => setIsHovered(true)} // Start hover state
       onHoverEnd={() => setIsHovered(false)} // End hover state
       animate={{ backgroundColor: isHovered ? "#1A1A73" : "#5e5eee" }}

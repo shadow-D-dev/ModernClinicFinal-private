@@ -20,9 +20,9 @@ export default function Home() {
       <div>
         <CommitMentComp />
       </div>
-      {/* <div className=""> */}
-      {/*   <Services /> */}
-      {/* </div> */}
+      <div className="">
+        <Services />
+      </div>
       {/* <div> */}
       {/*   <WhyUs /> */}
       {/* </div> */}
