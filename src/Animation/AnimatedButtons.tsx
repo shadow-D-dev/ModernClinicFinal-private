@@ -11,9 +11,9 @@ export default function AnimatedButtons() {
   return (
     <motion.div
       className="flex-wrap flex gap-4 md:gap-10  text-md md:text-xl mt-6 md:mt-10 "
-      initial={{ y: 40, opacity: 0 }} // Start position and opacity
-      animate={{ y: 0, opacity: 1 }} // End position and opacity
-      transition={{ duration: 0.5 }} // Animation properties
+      initial={{ y: 40, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
     >
       <CallButtonComp />
       <button

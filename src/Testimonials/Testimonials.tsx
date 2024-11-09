@@ -6,7 +6,7 @@ import PlusButton from "@/Animation/PlusButton";
 
 export default function Testimonials() {
   return (
-    <div className="bg-white w-full  flex justify-center  text-black pb-80">
+    <div className="bg-white w-full  flex justify-center  text-black pb-12 lg:pb-0">
       {/* Main Content Page starts here*/}
       <div className=" lg:w-[1300px] p-2 lg:p-0">
         {/* -----------Initial Text------------------- */}

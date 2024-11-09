@@ -29,9 +29,9 @@ export default function Home() {
       <div className="">
         <Testimonials />
       </div>
-      {/* <div className="relative xl:-top-[390px] top-28 "> */}
-      {/*   <ContactUsMap /> */}
-      {/* </div> */}
+      <div className="">
+        <ContactUsMap />
+      </div>
     </div>
   );
 }
