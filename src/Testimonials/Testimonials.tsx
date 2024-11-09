@@ -2,52 +2,53 @@ import Image from "next/image";
 import treatment from "@/../public/HomePageTreatment.jpg";
 import StatsTestimonials from "./StatsTestimonials";
 import TestimonialsComp from "./TestimonialsComp";
+import PlusButton from "@/Animation/PlusButton";
 
 export default function Testimonials() {
   return (
-    <div className="w-screen  h-[1000px] text-black">
-      <div className="bg-white w-screen  h-[1400px] xl:h-[900px] flex justify-center items-center ">
-        {/* Main Content Page starts here*/}
-        <div className="">
-          <div className=" xl:w-[1700px]">
-            {/* ---------------------------------------------- */}
-            {/* ---------------------------------------------- */}
-            {/* -----------Initial Text------------------- */}
+    <div className="bg-white w-full  flex justify-center  text-black pb-80">
+      {/* Main Content Page starts here*/}
+      <div className=" lg:w-[1300px] p-2 lg:p-0">
+        {/* -----------Initial Text------------------- */}
 
-            <div className="flex flex-col gap-12   pt-16">
-              <div className="">
-                <p className="text-xl xl:text-6xl font-bold  flex flex-col">
-                  {/* -----------will change from flex-col to flex-row for xl currently moving fast------------------- */}
-                  <span className="text-[#5e5eee]">
-                    Real stories of exceptional care
-                  </span>{" "}
-                  <span>and transformative smiles</span>
-                </p>
-              </div>
-            </div>
-            {/* ---------------------------------------------- */}
-            {/* ---------------------------------------------- */}
-            <div className="flex flex-col xl:flex-row mt-16 gap-12">
-              <div className="flex-1 flex flex-col ">
-                <div className="flex justify-center items-center xl:justify-start xl:items-center">
-                  <Image
-                    src={treatment}
-                    alt="test"
-                    className="h-96 w-96 xl:h-[500px] xl:w-[470px] rounded-[50px] "
-                  />
-                </div>
-                <div className="xl:relative xl:-top-24 xl:-right-20">
-                  <StatsTestimonials />
-                </div>
-              </div>
-
-              <div className="flex-1 xl:mr-10 xl:mt-2 xl:p-14  rounded-3xl shadow-2xl h-96 w-96 xl:h-[520px] xl:w-full bg-white">
-                <TestimonialsComp />
-              </div>
-              {/* ---------------------------------------------- */}
-              {/* ----------------------Both the comps end here------------- */}
+        <div className="flex flex-col lg:flex-row pt-16">
+          <p className=" xs:text-xl text-4xl lg:text-6xl font-bold  flex flex-col flex-[7] flex-wrap">
+            {/* -----------will change from flex-col to flex-row for xl currently moving fast------------------- */}
+            <span className="text-[#5e5eee]">
+              Real stories of exceptional care
+            </span>
+            <span>and transformative smiles</span>
+          </p>
+          <div className="flex xs:justify-center justify-start lg:justify-end items-center flex-[3]">
+            <div className="">
+              <PlusButton text={"Contact Us Now"} />
             </div>
           </div>
+        </div>
+        {/* ---------------------------------------------- */}
+        {/* ---------------------------------------------- */}
+
+        <div className="flex flex-col lg:flex-row mt-16 gap-12">
+          {/*Left comp*/}
+          <div className="flex-1 flex flex-col justify-center items-center lg:items-start">
+            <div className="flex ">
+              <Image
+                src={treatment}
+                alt="test"
+                className="h-96 w-96  rounded-[50px] "
+              />
+            </div>
+            <div className="lg:relative lg:-top-24 lg:-right-24 flex justify-center items-center xs:hidden">
+              <StatsTestimonials />
+              {/*made it hidden for xs as it was causing the responsiveness issue below 400px needs to be fixed */}
+            </div>
+          </div>
+          {/*Right comp*/}
+          <div className="flex-1 ">
+            <TestimonialsComp />
+          </div>
+          {/* ----------------------------------------------*/}
+          {/* ----------------------Both the comps end here------------- */}
         </div>
       </div>
     </div>

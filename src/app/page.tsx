@@ -26,9 +26,9 @@ export default function Home() {
       <div>
         <WhyUs />
       </div>
-      {/* <div className="relative -top-72"> */}
-      {/*   <Testimonials /> */}
-      {/* </div> */}
+      <div className="">
+        <Testimonials />
+      </div>
       {/* <div className="relative xl:-top-[390px] top-28 "> */}
       {/*   <ContactUsMap /> */}
       {/* </div> */}

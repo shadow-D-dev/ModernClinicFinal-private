@@ -36,7 +36,7 @@ export default function WhyUs() {
         </div>
         {/*Third comp*/}
 
-        <div className="flex-1 flex flex-col  gap-8 lg:gap-16 lg:justify-center">
+        <div className="flex-1 flex flex-col  gap-8 lg:gap-16 lg:justify-center lg:items-end">
           <div>
             <WhyUsRight
               heading={"Positive Patient Reviews"}
