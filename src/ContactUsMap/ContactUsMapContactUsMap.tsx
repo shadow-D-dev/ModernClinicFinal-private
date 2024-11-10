@@ -10,6 +10,7 @@ export default function ContactUsMap() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4327882632365!2d72.8517152122491!3d19.044700052877054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c96a1ab9dd61%3A0x12cf87875a7fb76f!2sShribalaji%20Dental%20clinic!5e0!3m2!1sen!2sin!4v1729380854365!5m2!1sen!2sin"
             className="rounded-3xl h-96 w-96 lg:h-[90%] lg:w-[90%] "
+            title="Map"
           ></iframe>
         </div>
         {/* The form section is starting from here */}
