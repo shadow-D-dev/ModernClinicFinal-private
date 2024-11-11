@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function AnimatedButtons() {
   const openWhatsApp = () => {
-    window.open("https://wa.me/8356858428?text=Hello%20there!", "_blank");
+    window.open("https://wa.me/9028757697?text=Hello%20there!", "_blank");
   };
   return (
     <motion.div
