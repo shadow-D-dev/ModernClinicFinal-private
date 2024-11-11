@@ -46,7 +46,7 @@ export default function AppointmentComp() {
             Need Dental Services?
           </p>
           <p className="text-md xl:text-lg font-plusJakarta text-black">
-            (+91)9764773648
+            (+91)8356858428
           </p>
         </div>
       </motion.div>
