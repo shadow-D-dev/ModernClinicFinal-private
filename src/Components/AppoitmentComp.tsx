@@ -10,18 +10,16 @@ export default function AppointmentComp() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Set to visible when component mounts
     setIsVisible(true);
   }, []);
 
-  // Animation variants
   const slideInVariants = {
-    hidden: { opacity: 0, y: 50 }, // Hidden state (initial)
+    hidden: { opacity: 0, y: 50 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.2, // Delay for stagger effect
+        delay: i * 0.2,
         duration: 0.5,
         ease: "easeOut",
       },

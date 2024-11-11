@@ -1,5 +1,10 @@
-import Image from "next/image";
+"use client";
+{
+  /*Made this comp a child comp coz for now i have to use motion.img for animating img once i figure a way will switch to the server*/
+}
 import treatment from "@/../public/HomePageTreatment.jpg";
+import { motion } from "framer-motion";
+import { slideInLeft } from "@/Animation/Animation";
 import StatsTestimonials from "./StatsTestimonials";
 import TestimonialsComp from "./TestimonialsComp";
 import PlusButton from "@/Animation/PlusButton";
@@ -31,11 +36,14 @@ export default function Testimonials() {
         <div className="flex flex-col lg:flex-row mt-16 gap-12">
           {/*Left comp*/}
           <div className="flex-1 flex flex-col justify-center items-center lg:items-start">
-            <div className="flex ">
-              <Image
-                src={treatment}
+            <div className="flex">
+              <motion.img
+                src={treatment.src}
                 alt="test"
-                className="h-96 w-96  rounded-[50px] "
+                initial="hidden"
+                animate="visible"
+                variants={slideInLeft}
+                className="h-96 w-96  rounded-[50px] object-cover"
               />
             </div>
             <div className="lg:relative lg:-top-24 lg:-right-24 flex justify-center items-center xs:hidden">
