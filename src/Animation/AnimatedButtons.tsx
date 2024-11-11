@@ -19,6 +19,7 @@ export default function AnimatedButtons() {
       <button
         className=" flex gap-4  rounded-[100px] p-3 px-6 justify-center items-center border border-green-600 text-center text-green-600"
         onClick={openWhatsApp}
+        aria-label="Contact via WhatsApp"
       >
         <Image src={whatsapp} alt="plusicon" className="h-6 w-6" />
         Enquries
