@@ -1,5 +1,7 @@
+import ParagraphAnimation from "@/Animation/ParagraphAnimation";
 import CommitMentComp from "@/Commitment/CommitMent";
 import ContactUsMap from "@/ContactUsMap/ContactUsMapContactUsMap";
+import CodecheckComp from "@/Header/Codecheckcom";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
 import Services from "@/Services/Services";
@@ -29,6 +31,9 @@ export default function Home() {
       </div>
       <div className="">
         <ContactUsMap />
+      </div>
+      <div>
+        <CodecheckComp />
       </div>
     </div>
   );

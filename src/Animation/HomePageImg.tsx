@@ -24,7 +24,6 @@ export default function HomePageImg() {
     />
   );
 }
-
 // "use client";
 // import { motion } from "framer-motion";
 // import image from "@/../public/HomePageTreatment.jpg";
