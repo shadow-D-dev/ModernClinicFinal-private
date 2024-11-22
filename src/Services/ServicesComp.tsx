@@ -44,7 +44,7 @@ export default function ServiceComp({
         <Image
           src={service}
           alt="service1"
-          className="h-44 lg:h-52 w-full rounded-[45px]"
+          className="h-52 w-full rounded-[45px]"
         />
       </div>
     </div>

@@ -1,11 +1,10 @@
 "use client";
 import Image from "next/image";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import phone from "@/../public/PhoneIcon.svg";
 import time from "@/../public/OpeningHours.svg";
 import PlusButton from "../Animation/PlusButton";
-import AddIcon from "@/../public/WhitePlusIcon.svg";
 
 export default function AppointmentComp() {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,7 +20,7 @@ export default function AppointmentComp() {
       y: 0,
       transition: {
         delay: i * 0.2,
-        duration: 0.5,
+        duration: 0.7,
         ease: "easeOut",
       },
     }),
