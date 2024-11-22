@@ -5,7 +5,7 @@ interface PlusButtonProps {
 }
 export default function PlusButton({ text }: PlusButtonProps) {
   return (
-    <div className="xs:flex-col flex gap-2 bg-[#5e5eee] rounded-full p-4 text-white text-md xl:text-lg font-plusJakarta font-bold  justify-center items-center">
+    <div className="xs:flex-col flex  justify-center items-center gap-2 bg-[#5e5eee] rounded-full p-4 text-white text-md font-plusJakarta font-bold ">
       <p>{text}</p>
       <Image src={AddIcon} alt="plus icon" className="h-4 w-4" />
     </div>

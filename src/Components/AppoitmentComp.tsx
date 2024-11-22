@@ -28,17 +28,17 @@ export default function AppointmentComp() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row bg-white rounded-[40px]  p-6  xl:p-6 gap-6 xl:gap-16 shadow-sm shadow-gray-200 ">
+    <div className="flex flex-col lg:flex-row bg-white rounded-[40px]  p-8   gap-6 xl:gap-16 shadow-sm shadow-gray-200  ">
       {/* First Div */}
       <motion.div
-        className="xs:flex-col flex flex-1 xl:border xl:border-white xl:border-r-black gap-6 "
+        className="xs:flex-col flex items-center xl:border-r  xl:border-neutral-300 gap-6 lg:pr-4 flex-1"
         variants={slideInVariants}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         custom={0}
       >
-        <div className="rounded-2xl bg-[#5e5eee] xs:w-12 p-4 lg:p-6 justify-center items-center ">
-          <Image src={phone} alt="phone" className="w-6 h-6 lg:w-8 lg:h-8" />
+        <div className=" rounded-2xl bg-[#5e5eee] flex justify-center items-center h-16 w-16  p-4 ">
+          <Image src={phone} alt="phone" className="h-8 w-8" />
         </div>
         <div className="flex flex-col gap-0 xl:gap-2 justify-center">
           <p className="text-lg xl:text-xl font-plusJakarta font-bold text-black">
@@ -52,17 +52,17 @@ export default function AppointmentComp() {
 
       {/* Second Div */}
       <motion.div
-        className="xs:flex-col flex flex-1 xl:border xl:border-white xl:border-r-black gap-6"
+        className="xs:flex-col flex items-center  xl:border-r  xl:border-neutral-300 gap-6 lg:pr-4 flex-1"
         variants={slideInVariants}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
         custom={1}
       >
-        <div className="rounded-2xl bg-[#5e5eee] xs:w-12 p-4 lg:p-6 justify-center items-center xl:h-auto">
-          <Image src={time} alt="time" className="lg:w-8 lg:h-8 w-6 h-6" />
+        <div className="rounded-2xl bg-[#5e5eee] flex justify-center items-center h-16 w-16 p-4 ">
+          <Image src={time} alt="time" className="h-8 w-8" />
         </div>
         <div className="flex flex-col gap-0 xl:gap-2 justify-center">
-          <p className="text-md xl:text-xl font-plusJakarta font-bold text-black">
+          <p className="text-lg xl:text-xl font-plusJakarta font-bold text-black">
             Opening Hours
           </p>
           <p className="text-sm xl:text-lg font-plusJakarta text-black">
@@ -73,7 +73,7 @@ export default function AppointmentComp() {
 
       {/* Third Div */}
       <motion.div
-        className="flex-1 flex justify-center items-center"
+        className="flex justify-center items-center flex-1"
         variants={slideInVariants}
         initial="hidden"
         animate={isVisible ? "visible" : "hidden"}
