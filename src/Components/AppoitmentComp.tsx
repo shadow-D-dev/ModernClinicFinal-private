@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import phone from "@/../public/PhoneIcon.svg";
 import time from "@/../public/OpeningHours.svg";
 import PlusButton from "../Animation/PlusButton";
+import AddIcon from "@/../public/WhitePlusIcon.svg";
 
 export default function AppointmentComp() {
   const [isVisible, setIsVisible] = useState(false);

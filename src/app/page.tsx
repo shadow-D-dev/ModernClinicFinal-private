@@ -1,10 +1,9 @@
-import ParagraphAnimation from "@/Animation/ParagraphAnimation";
 import CommitMentComp from "@/Commitment/CommitMent";
 import ContactUsMap from "@/ContactUsMap/ContactUsMapContactUsMap";
-import CodecheckComp from "@/Header/Codecheckcom";
 import Header from "@/Header/Header";
 import HomePage from "@/HomePage/HomePage";
 import Services from "@/Services/Services";
+import AnimatedText from "@/Header/Codecheckcom";
 import Testimonials from "@/Testimonials/Testimonials";
 import WhyUs from "@/WhyUs/WhyUs";
 export default function Home() {
@@ -32,8 +31,10 @@ export default function Home() {
       <div className="">
         <ContactUsMap />
       </div>
-      <div>
-        <CodecheckComp />
+      <div className="flex justify-center items-center p-96">
+        <AnimatedText>
+          {["This is the test", "This is the test", "This is the test"]}
+        </AnimatedText>
       </div>
     </div>
   );

@@ -44,8 +44,8 @@ export default function RightCommitMentComp() {
         <HoverEffect
           text={"Read More About us"}
           alt={"arrow"}
-          width={20}
-          height={20}
+          width={24}
+          height={24}
           arrow={arrow}
         />
       </div>

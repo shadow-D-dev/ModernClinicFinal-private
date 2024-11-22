@@ -1,6 +1,8 @@
 import add from "@/../public/AddIcon.svg";
+import AddIcon from "@/../public/WhitePlusIcon.svg";
 import Image from "next/image";
 import phone from "@/../public/PhoneIcon.svg";
+import PlusButton from "@/Animation/PlusButton";
 
 export default function ContactUsMap() {
   return (
@@ -84,15 +86,18 @@ export default function ContactUsMap() {
               </label>
             </div>
             <div className=" flex mt-8 gap-6 xs:flex-col justify-start items-center">
-              <button className=" flex justify-center items-center gap-2 lg:gap-4 bg-[#5e5eee] rounded-[100px] p-2  lg:p-4 text-white text-md lg:text-xl font-plusJakarta font-bold xs:flex-col">
-                Make An Appoitment
-                <Image
-                  src={add}
-                  alt="phoneicon"
-                  className="h-4 w-4 lg:h-6 lg:w-6"
-                />
-              </button>
-              <button className=" flex gap-4 bg-[#5e5eee] rounded-[100px]  text-white text-xl font-bold w-12 h-12  justify-center items-center">
+              {/* <button className=" flex justify-center items-center gap-2 lg:gap-4 bg-[#5e5eee] rounded-[100px] p-2  lg:p-4 text-white text-md lg:text-xl font-plusJakarta font-bold xs:flex-col"> */}
+              {/*   Make An Appoitment */}
+              {/*   <Image */}
+              {/*     src={AddIcon} */}
+              {/*     alt="phoneicon" */}
+              {/*     className="h-4 w-4 lg:h-6 lg:w-6" */}
+              {/*   /> */}
+              {/* </button> */}
+              <div>
+                <PlusButton text="Book Appointment" />
+              </div>
+              <button className=" flex  bg-[#5e5eee] rounded-[100px]  w-14 h-14  justify-center items-center">
                 <Image src={phone} alt="phoneicon" />
               </button>
             </div>

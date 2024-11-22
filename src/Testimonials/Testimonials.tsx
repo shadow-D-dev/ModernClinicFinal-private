@@ -8,7 +8,7 @@ import { slideInLeft } from "@/Animation/Animation";
 import StatsTestimonials from "./StatsTestimonials";
 import TestimonialsComp from "./TestimonialsComp";
 import PlusButton from "@/Animation/PlusButton";
-import AnimatedText from "@/Animation/ParagraphAnimation";
+
 export default function Testimonials() {
   return (
     <div className="bg-white w-full  flex justify-center  text-black pb-12 lg:pb-0">
@@ -17,15 +17,13 @@ export default function Testimonials() {
         {/* -----------Initial Text------------------- */}
 
         <div className="flex flex-col lg:flex-row pt-16">
-          <div className=" xs:text-xl text-4xl lg:text-6xl font-bold  flex flex-col flex-[7] flex-wrap justify-start">
+          <p className=" xs:text-xl text-4xl lg:text-6xl font-bold  flex flex-col flex-[7] flex-wrap">
             {/* -----------will change from flex-col to flex-row for xl currently moving fast------------------- */}
             <span className="text-[#5e5eee]">
-              <AnimatedText>Real stories of exceptional care</AnimatedText>
+              Real stories of exceptional care
             </span>
-            <span>
-              <AnimatedText>and transformative smiles</AnimatedText>
-            </span>
-          </div>
+            <span>and transformative smiles</span>
+          </p>
           <div className="flex xs:justify-center justify-start lg:justify-end items-center flex-[3]">
             <div className="">
               <PlusButton text={"Contact Us Now"} />

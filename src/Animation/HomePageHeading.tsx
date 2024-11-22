@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
+import AnimatedText from "./ParagraphAnimation";
 export default function HomePageHeading() {
   return (
     <motion.div className="text-4xl sm:text-5xl lg:text-[56px] font-plusJakarta">

@@ -199,8 +199,8 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ children }) => {
       opacity: 1,
       filter: "blur(0px)",
       transition: {
-        delay: i * 0.05, // Stagger each character
-        duration: 0.5, // Duration of the movement
+        delay: i * 0.03, // Stagger each character
+        duration: 0.3, // Duration of the movement
         ease: "easeOut", // Smooth easing for the bounce effect
       },
     }),
@@ -219,7 +219,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ children }) => {
           initial="initial"
           animate={isInView ? "animate" : ""}
           custom={i}
-          className="text-xl  sm:text-4xl font-bold tracking-tighter md:text-6xl md:leading-[4rem]"
+          className=""
         >
           {current === " " ? <span>&nbsp;</span> : current}
         </motion.div>
