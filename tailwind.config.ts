@@ -25,6 +25,7 @@ const config: Config = {
       },
       screens: {
         xs: { max: "349px" }, // Custom breakpoint for 350px
+        mb: { min: "350px", max: "400px" },
       },
     },
   },
