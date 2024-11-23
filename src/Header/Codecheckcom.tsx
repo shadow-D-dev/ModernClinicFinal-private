@@ -4,16 +4,21 @@ import { ReactNode } from "react";
 
 interface AnimatedTextProps {
   children: ReactNode;
+  duration?: number;
   delay?: number; // Corrected spelling
 }
 
-export default function CodeCheckComp({ children, delay }: AnimatedTextProps) {
+export default function CodeCheckComp({
+  children,
+  delay = 0,
+  duration = 0.5,
+}: AnimatedTextProps) {
   const textContainer = {
     hidden: { y: "70%" },
     visible: {
       y: "-10%",
       transition: {
-        duration: 0.5,
+        duration,
         ease: "easeOut",
         delay, // Delay is used here
       },
@@ -22,9 +27,9 @@ export default function CodeCheckComp({ children, delay }: AnimatedTextProps) {
 
   return (
     <div className="overflow-hidden h-[3rem]">
-      <motion.div initial="hidden" animate="visible" variants={textContainer}>
+      <motion.p initial="hidden" animate="visible" variants={textContainer}>
         {children}
-      </motion.div>
+      </motion.p>
     </div>
   );
 }
