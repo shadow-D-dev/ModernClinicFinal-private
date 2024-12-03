@@ -6,6 +6,7 @@ import Services from "@/Services/Services";
 import Testimonials from "@/Testimonials/Testimonials";
 import WhyUs from "@/WhyUs/WhyUs";
 import CodeCheckComp from "@/Header/Codecheckcom";
+import AnimatedText from "@/Animation/ParagraphAnimation";
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -35,8 +36,15 @@ export default function Home() {
       {/*   <AnimatedText>{"This is the test for the animation"}</AnimatedText> */}
       {/* </div> */}
       <div className="text-6xl text-[#5e5eee] font-bold p-96 flex justify-center items-center flex-col bg-gray-400">
-        <CodeCheckComp delay={0}>{"the text is that "}</CodeCheckComp>
-        <CodeCheckComp delay={1}>{"the text is that "}</CodeCheckComp>
+        <CodeCheckComp>{"the text is that "}</CodeCheckComp>
+        <div className="text-2xl">
+          {" "}
+          <AnimatedText>
+            {
+              "the text is that which is been selected for the animation of the text wherein i am testing the animation and which might get deleted any second"
+            }
+          </AnimatedText>
+        </div>
       </div>
     </div>
   );

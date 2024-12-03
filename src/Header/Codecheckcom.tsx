@@ -6,15 +6,17 @@ interface AnimatedTextProps {
   children: ReactNode;
   duration?: number;
   delay?: number; // Corrected spelling
+  y?: number;
 }
 
 export default function CodeCheckComp({
   children,
   delay = 0,
   duration = 0.5,
+  y = 90,
 }: AnimatedTextProps) {
   const textContainer = {
-    hidden: { y: "70%" },
+    hidden: { y: `${y}%` },
     visible: {
       y: "-10%",
       transition: {
@@ -26,10 +28,15 @@ export default function CodeCheckComp({
   };
 
   return (
-    <div className="overflow-hidden h-[3rem]">
-      <motion.p initial="hidden" animate="visible" variants={textContainer}>
+    <div className="overflow-hidden ">
+      <motion.div
+        className="h-full"
+        initial="hidden"
+        animate="visible"
+        variants={textContainer}
+      >
         {children}
-      </motion.p>
+      </motion.div>
     </div>
   );
 }
