@@ -3,36 +3,36 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import smile from "@/../public/InParaSmile.jpg";
 import care from "@/../public/InParaCare.jpg";
+import SlideUpAnimation from "./SlideUpAnimation";
 import AnimatedText from "./ParagraphAnimation";
-import CodeCheckComp from "@/Header/Codecheckcom";
 export default function HomePageHeading() {
   return (
     <motion.div className="text-4xl sm:text-5xl lg:text-[56px] font-plusJakarta">
       <div className="flex flex-wrap items-center gap-2 lg:gap-2 font-extrabold">
-        <CodeCheckComp>Your</CodeCheckComp>
-        <CodeCheckComp>smile</CodeCheckComp>
-        <CodeCheckComp y={100} delay={0.35}>
+        <SlideUpAnimation>Your</SlideUpAnimation>
+        <SlideUpAnimation>smile</SlideUpAnimation>
+        <SlideUpAnimation y={100} delay={0.3}>
           <Image
             src={smile}
             alt="Image depicting a smile"
             className="rounded-full mt-1 md:mt-3 h-8 w-20 md:h-12 md:w-32"
           />
-        </CodeCheckComp>
-        <CodeCheckComp>matters</CodeCheckComp>
+        </SlideUpAnimation>
+        <SlideUpAnimation>matters</SlideUpAnimation>
 
-        <CodeCheckComp>expert</CodeCheckComp>
-        <CodeCheckComp>dental</CodeCheckComp>
-        <CodeCheckComp y={100} delay={0.35}>
+        <SlideUpAnimation>expert</SlideUpAnimation>
+        <SlideUpAnimation>dental</SlideUpAnimation>
+        <SlideUpAnimation y={100} delay={0.35}>
           <Image
             src={care}
             alt="Image related to dental care"
             className="rounded-full mt-1 md:mt-3 h-8 w-20 md:h-12 md:w-32"
           />
-        </CodeCheckComp>
-        <CodeCheckComp>care</CodeCheckComp>
+        </SlideUpAnimation>
+        <SlideUpAnimation>care</SlideUpAnimation>
 
-        <CodeCheckComp>a bright</CodeCheckComp>
-        <CodeCheckComp> tomorrow</CodeCheckComp>
+        <SlideUpAnimation>a bright</SlideUpAnimation>
+        <SlideUpAnimation> tomorrow</SlideUpAnimation>
       </div>
 
       <motion.p

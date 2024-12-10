@@ -7,7 +7,7 @@ type AnimatedTextProps = {
   delay?: number;
 };
 
-const AnimatedText: React.FC<AnimatedTextProps> = ({ children, delay }) => {
+const AnimatedText: React.FC<AnimatedTextProps> = ({ children, delay = 0 }) => {
   const text = children.toString();
   const splittedText = text.split("");
   const pullupVariant = {

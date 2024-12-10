@@ -32,19 +32,8 @@ export default function Home() {
       <div className="">
         <ContactUsMap />
       </div>
-      {/* <div className="flex justify-center items-center p-96 bg-gray-400 text-[#5e5eee] font-bold text-6xl"> */}
-      {/*   <AnimatedText>{"This is the test for the animation"}</AnimatedText> */}
-      {/* </div> */}
-      <div className="text-6xl text-[#5e5eee] font-bold p-96 flex justify-center items-center flex-col bg-gray-400">
-        <CodeCheckComp>{"the text is that "}</CodeCheckComp>
-        <div className="text-2xl">
-          {" "}
-          <AnimatedText>
-            {
-              "the text is that which is been selected for the animation of the text wherein i am testing the animation and which might get deleted any second"
-            }
-          </AnimatedText>
-        </div>
+      <div>
+        <CodeCheckComp />
       </div>
     </div>
   );
